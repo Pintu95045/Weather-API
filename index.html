@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Landing Page Section -->
+        <div class="landing-page" id="landingPageSection">
+            <h1>Check Your Weather</h1>
+            <!-- Button to fetch weather data -->
+            <button id="getWeatherButton">Get Weather Data</button>
+        </div>
+
+        <!-- Weather Information Section -->
+        <div id="weatherInfoSection">
+            <h2>Welcome to Your Local Weather Forecast</h2>
+            <p>Current Location Details:</p>
+
+            <!-- Coordinates Buttons Section -->
+            <div class="coordinates-section">
+                <button id="latitudeButton" class="coordinate-btn"></button>
+                <button id="longitudeButton" class="coordinate-btn"></button>
+            </div>
+
+            <!-- Map Section -->
+            <div id="locationMap"></div>
+
+            <h3>Weather Information</h3>
+
+            <!-- Weather Data Display Section -->
+            <div class="weather-data-section" id="weatherDataDisplay"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
