@@ -4,6 +4,7 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100%;
+    width: 100%;
 }
 
 /* Main container for the entire app */
@@ -11,10 +12,10 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* Center items vertically */
     height: 100%;
-    background-color: #4B0082;
     color: white;
+    background-color: #360369; /* Background color for the entire container */
 }
 
 /* Landing page styling */
@@ -39,28 +40,29 @@ h1 {
     border-radius: 5px;
 }
 
-/* Weather content section */
+/* Weather information section */
 #weatherInfoSection {
-    display: none;
+    display: none; /* Initially hidden */
     width: 100%;
-    max-width: 800px;
+    max-width: 800px; /* Limit the width for better appearance */
     border: 1px solid #333;
+    height: 100%;
 }
 
 /* Map container */
 #locationMap {
-    width: 100%;
+    width: 115%;
     height: 300px;
     border: none;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 /* Coordinates buttons styling */
 .coordinate-btn {
-    background-color: #4B0082; /* Light Purple */
+    background-color: #270846;
     color: white; 
-    border: 1px solid #a544ea;
-    padding: 10px 30px;
+    border: 1px solid #270846;
+    padding: 10px 10px;
     font-size: 1.2em;
     cursor: pointer;
     border-radius: 5px;
@@ -71,15 +73,16 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    margin-top: 20px;
+    background-color: white; /* Background color for weather data section */
 }
 
 /* Individual weather item styling */
 .weather-item {
-    background-color: #6A0DAD;
+    background-color: #360369;
     padding: 2px;
     border-radius: 5px;
     text-align: center;
+    font-size: 0.9em;
 }
 
 /* Coordinates section styling */
@@ -87,4 +90,34 @@ h1 {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+    background-color: #360369; /* Background color for the coordinates section */
+}
+
+/* Styling for the h3 tag below the map */
+h3 {
+    color: #360369; /* Change the color of the text to match the theme */
+    margin-top: 10px; /* Add some margin for spacing */
+    text-align: center; /* Center align the h3 text */
+}
+
+/* Section containing h3 and weather data */
+.weather-info-container {
+    width: 100%; /* Full width */
+    max-width: 800px; /* Match the width of the above section */
+    background-color: white; /* White background for the section below the map */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Add margin to match the above section */
+    box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+/* Above map section */
+.abc {
+    background-color: #360369; /* Background color */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Full width */
+    max-width: 700px; /* Same as weather-info-container */
+    margin-bottom: 10px; /* Margin to match below section */
+    box-sizing: border-box; /* Ensure padding is included in total width */
 }

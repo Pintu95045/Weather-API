@@ -17,22 +17,25 @@
 
         <!-- Weather Information Section -->
         <div id="weatherInfoSection">
-            <h2>Welcome to Your Local Weather Forecast</h2>
-            <p>Current Location Details:</p>
+            <div class="abc">
+                <h2>Welcome to Your Local Weather Forecast</h2>
+                <p>Current Location Details:</p>
+                <!-- Coordinates Buttons Section -->
+                <div class="coordinates-section">
+                    <button id="latitudeButton" class="coordinate-btn"></button>
+                    <button id="longitudeButton" class="coordinate-btn"></button>
+                </div>
 
-            <!-- Coordinates Buttons Section -->
-            <div class="coordinates-section">
-                <button id="latitudeButton" class="coordinate-btn"></button>
-                <button id="longitudeButton" class="coordinate-btn"></button>
+                <!-- Map Section -->
+                <div id="locationMap"></div>
             </div>
 
-            <!-- Map Section -->
-            <div id="locationMap"></div>
-
-            <h3>Weather Information</h3>
-
-            <!-- Weather Data Display Section -->
-            <div class="weather-data-section" id="weatherDataDisplay"></div>
+            <!-- New container for h3 and weather data -->
+            <div class="weather-info-container">
+                <h3>Your Weather Data</h3>
+                <!-- Weather Data Display Section -->
+                <div class="weather-data-section" id="weatherDataDisplay"></div>
+            </div>
         </div>
     </div>
 
